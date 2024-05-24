@@ -1,5 +1,7 @@
+import HomeTemplate from "../../Components/template/Home";
+
 function Home() {
-  return <div>Home</div>;
+  return <HomeTemplate />;
 }
 
 export default Home;
