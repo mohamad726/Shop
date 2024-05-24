@@ -5,10 +5,17 @@ import Layout from '../Layout';
 import Category from '../Pages/Category';
 import Product from '../Pages/Product';
 import Login from '../Pages/Login';
+import AboutUs from '../Pages/About-us';
+import {
+  ABOUT_US_PAGE_ROUTE,
+  CART_PAGE_ROUTE,
+  HOME_PAGE_ROUTE,
+  LOGIN_PAGE_ROUTE,
+} from '../Const/routes';
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: HOME_PAGE_ROUTE,
     element: <Layout />, //layout
     errorElement: <p>error</p>,
     children: [
@@ -17,7 +24,11 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'cart',
+        path: ABOUT_US_PAGE_ROUTE,
+        element: <AboutUs />,
+      },
+      {
+        path: CART_PAGE_ROUTE,
         element: <Cart />,
       },
       {
@@ -31,7 +42,7 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: 'login',
+    path: LOGIN_PAGE_ROUTE,
     element: <Login />,
   },
 ]);
