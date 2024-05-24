@@ -1,12 +1,13 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
+import { Footer, Header } from "../Components/Layout";
 
 function Layout() {
   return (
-    <>
-      <header>header</header>
+    <div className="relative h-screen">
+      <Header />
       <Outlet />
-      <footer>footer</footer>
-    </>
+      <Footer />
+    </div>
   );
 }
 
