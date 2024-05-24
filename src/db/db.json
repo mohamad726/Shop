@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Furniture",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFP2r7X9qypxSQAYEdg-ix2PhJQ0RZssSRjVcJfPEVQ&s",
+      "categoryName": "furniture"
+    },
+    {
+      "id": 2,
+      "title": "Hand Bag",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqoLhkk5uzj8Rx92Fp6gOzJRihFHzomOflGvNUze2yCw&s",
+      "categoryName": "hand-bag"
+    },
+    {
+      "id": 3,
+      "title": "Books",
+      "image": "https://media.licdn.com/dms/image/D4D12AQExorXUup5Ilg/article-cover_image-shrink_720_1280/0/1664311413075?e=2147483647&v=beta&t=NiblSaSkbbcqUoGQZAsEoacaVOBFATEtDkh4qOGJIhU",
+      "categoryName": "books"
+    },
+    {
+      "id": 4,
+      "title": "Tech",
+      "image": "https://cdn.vox-cdn.com/thumbor/x5n4FWu_Vw2ZzY4j9QWDR1EYqnU=/0x0:2040x1360/1400x1400/filters:focal(851x757:852x758)/cdn.vox-cdn.com/uploads/chorus_asset/file/22900781/bfarsace_211004_4777_0043.jpg",
+      "categoryName": "tech"
+    },
+    {
+      "id": 5,
+      "title": "Sneakers",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf17CBRWxwSli2FUhEIKEYHh9CkGR0sOkazKtmgN6bhQ&s",
+      "categoryName": "sneakers"
+    },
+    {
+      "id": 6,
+      "title": "Travel",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/j1jlksw0/poster/y/w/h/medium-poster2123-travel-around-the-world-on-good-quality-hd-original-imaet2nf4qutqyd6.jpeg?q=90&crop=false",
+      "categoryName": "travel"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "1984",
+      "price": 100,
+      "category": "books",
+      "image": "https://media.licdn.com/dms/image/D4D12AQExorXUup5Ilg/article-cover_image-shrink_720_1280/0/1664311413075?e=2147483647&v=beta&t=NiblSaSkbbcqUoGQZAsEoacaVOBFATEtDkh4qOGJIhU",
+      "description": "1984 is a dystopian novella by George Orwell published in 1949, which follows the life of Winston Smith, a low ranking member of 'the Party', who is frustrated by the omnipresent eyes of the party, and its ominous ruler Big Brother."
+    },
+    {
+      "id": 2,
+      "name": "Animal Farm",
+      "price": 150,
+      "category": "books",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNq7IteMqjQ3ZbbalM0HpfJF_Nt_lpHg5-qtYrcV_DQ&s",
+      "description": "It tells the story of a group of anthropomorphic farm animals who rebel against their human farmer, hoping to create a society where the animals can be equal, free, and happy. Ultimately, the rebellion is betrayed and, under the dictatorship of a pig named Napoleon, the farm ends up in a state as bad as it was before."
+    },
+    {
+      "id": 3,
+      "name": "Lord of the Rings",
+      "price": 150,
+      "category": "books",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NnP79CsF1GdGJql6LAqPfAAin76w3vp2jUHseJKEx2kYGL4uNtNqHtSAgrzjGcCr4Lk&usqp=CAU",
+      "description": "The Lord of the Rings is an epic[1] high fantasy novel[a] by the English author and scholar J. R. R. Tolkien. Set in Middle-earth, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, The Lord of the Rings is one of the best-selling books ever written, with over 150 million copies sold."
+    }
+  ]
+}
