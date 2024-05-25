@@ -3,7 +3,7 @@ import Hero from "../../Hero";
 
 const HomeTemplate = () => {
   return (
-    <main className="flex flex-col gap-9 py-9">
+    <main className="flex flex-col gap-9">
       <Hero />
       <Category />
     </main>

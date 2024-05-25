@@ -1,7 +1,6 @@
 import Card from "../../Card/Card";
 
 const ProductTemplate = ({ data, isLoading, error }) => {
-  console.log(data);
   return (
     <main>
       {isLoading && <p>Loading ...</p>}

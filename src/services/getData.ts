@@ -6,7 +6,11 @@ export const getData = async (category: string) => {
 };
 
 export const getSingleData = async (id: string) => {
-  const data = await fetch(`${BASE_URL}/products/1`);
-  console.log(data.json());
+  const data = await fetch(`${BASE_URL}/products/${id}`);
+  return data.json();
+};
+
+export const getCategoriesData = async () => {
+  const data = await fetch(`${BASE_URL}/categories`);
   return data.json();
 };
