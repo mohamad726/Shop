@@ -3,43 +3,43 @@
     {
       "id": 1,
       "title": "Furniture",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFP2r7X9qypxSQAYEdg-ix2PhJQ0RZssSRjVcJfPEVQ&s",
+      "image": "http://localhost:5005/furniture.png",
       "categoryName": "furniture"
     },
     {
       "id": 2,
       "title": "Hand Bag",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqoLhkk5uzj8Rx92Fp6gOzJRihFHzomOflGvNUze2yCw&s",
+      "image": "http://localhost:5005/hand-bag.png",
       "categoryName": "hand-bag"
     },
     {
       "id": 3,
       "title": "Books",
-      "image": "https://media.licdn.com/dms/image/D4D12AQExorXUup5Ilg/article-cover_image-shrink_720_1280/0/1664311413075?e=2147483647&v=beta&t=NiblSaSkbbcqUoGQZAsEoacaVOBFATEtDkh4qOGJIhU",
+      "image": "http://localhost:5005/books.png",
       "categoryName": "books"
     },
     {
       "id": 4,
       "title": "Tech",
-      "image": "https://cdn.vox-cdn.com/thumbor/x5n4FWu_Vw2ZzY4j9QWDR1EYqnU=/0x0:2040x1360/1400x1400/filters:focal(851x757:852x758)/cdn.vox-cdn.com/uploads/chorus_asset/file/22900781/bfarsace_211004_4777_0043.jpg",
+      "image": "http://localhost:5005/tech.png",
       "categoryName": "tech"
     },
     {
       "id": 5,
       "title": "Sneakers",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf17CBRWxwSli2FUhEIKEYHh9CkGR0sOkazKtmgN6bhQ&s",
+      "image": "http://localhost:5005/sneakers.png",
       "categoryName": "sneakers"
     },
     {
       "id": 6,
       "title": "Travel",
-      "image": "https://rukminim2.flixcart.com/image/850/1000/j1jlksw0/poster/y/w/h/medium-poster2123-travel-around-the-world-on-good-quality-hd-original-imaet2nf4qutqyd6.jpeg?q=90&crop=false",
+      "image": "http://localhost:5005/travel.png",
       "categoryName": "travel"
     }
   ],
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "name": "1984",
       "price": 100,
       "category": "books",
@@ -61,6 +61,454 @@
       "category": "books",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9NnP79CsF1GdGJql6LAqPfAAin76w3vp2jUHseJKEx2kYGL4uNtNqHtSAgrzjGcCr4Lk&usqp=CAU",
       "description": "The Lord of the Rings is an epic[1] high fantasy novel[a] by the English author and scholar J. R. R. Tolkien. Set in Middle-earth, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, The Lord of the Rings is one of the best-selling books ever written, with over 150 million copies sold."
+    },
+    {
+      "id": 4,
+      "name": "The Great Gatsby",
+      "price": 130,
+      "category": "books",
+      "image": "https://example.com/the-great-gatsby.png",
+      "description": "A 1925 novel written by American author F. Scott Fitzgerald."
+    },
+    {
+      "id": 5,
+      "name": "Pride and Prejudice",
+      "price": 115,
+      "category": "books",
+      "image": "https://example.com/pride-and-prejudice.png",
+      "description": "A romantic novel of manners written by Jane Austen in 1813."
+    },
+    {
+      "id": 6,
+      "name": "The Catcher in the Rye",
+      "price": 110,
+      "category": "books",
+      "image": "https://example.com/the-catcher-in-the-rye.png",
+      "description": "A novel by J. D. Salinger, partially published in serial form in 1945–1946."
+    },
+    {
+      "id": 7,
+      "name": "The Hobbit",
+      "price": 90,
+      "category": "books",
+      "image": "https://example.com/the-hobbit.png",
+      "description": "A children's fantasy novel by English author J. R. R. Tolkien."
+    },
+    {
+      "id": 8,
+      "name": "Fahrenheit 451",
+      "price": 135,
+      "category": "books",
+      "image": "https://example.com/fahrenheit-451.png",
+      "description": "A dystopian novel by American writer Ray Bradbury, first published in 1953."
+    },
+    {
+      "id": 9,
+      "name": "Moby Dick",
+      "price": 160,
+      "category": "books",
+      "image": "https://example.com/moby-dick.png",
+      "description": "A novel by American writer Herman Melville, published in 1851 during the period of the American Renaissance."
+    },
+    {
+      "id": 10,
+      "name": "Eames Chair",
+      "price": 350,
+      "category": "furniture",
+      "image": "https://example.com/eames-chair.png",
+      "description": "The Eames Chair, a modern style icon, combines form and function with its sleek design and comfortable seating."
+    },
+    {
+      "id": 11,
+      "name": "Ottoman",
+      "price": 200,
+      "category": "furniture",
+      "image": "https://example.com/ottoman.png",
+      "description": "An upholstered sofa without arms or a back, often used as a stool or footstool."
+    },
+    {
+      "id": 12,
+      "name": "Coffee Table",
+      "price": 180,
+      "category": "furniture",
+      "image": "https://example.com/coffee-table.png",
+      "description": "A low table designed to be placed in a sitting area for convenient support of beverages."
+    },
+    {
+      "id": 13,
+      "name": "Bookshelf",
+      "price": 220,
+      "category": "furniture",
+      "image": "https://example.com/bookshelf.png",
+      "description": "A shelf or shelves for storing books, often in a library."
+    },
+    {
+      "id": 14,
+      "name": "Dining Table",
+      "price": 400,
+      "category": "furniture",
+      "image": "https://example.com/dining-table.png",
+      "description": "A table on which meals are served in a dining room."
+    },
+    {
+      "id": 15,
+      "name": "Desk",
+      "price": 330,
+      "category": "furniture",
+      "image": "https://example.com/desk.png",
+      "description": "A piece of furniture with a flat table-style work surface used in a school, office, home or the like."
+    },
+    {
+      "id": 16,
+      "name": "Wardrobe",
+      "price": 480,
+      "category": "furniture",
+      "image": "https://example.com/wardrobe.png",
+      "description": "A large, tall cabinet in which clothes may be hung or stored."
+    },
+    {
+      "id": 17,
+      "name": "Armchair",
+      "price": 250,
+      "category": "furniture",
+      "image": "https://example.com/armchair.png",
+      "description": "A comfortable chair with side supports for a person's arms."
+    },
+    {
+      "id": 18,
+      "name": "Sofa",
+      "price": 500,
+      "category": "furniture",
+      "image": "https://example.com/sofa.png",
+      "description": "A long upholstered seat with a back and arms, for two or more people."
+    },
+    {
+      "id": 19,
+      "name": "Bed",
+      "price": 550,
+      "category": "furniture",
+      "image": "https://example.com/bed.png",
+      "description": "A piece of furniture for sleep or rest, typically a framework with a mattress."
+    },
+    {
+      "id": 20,
+      "name": "MacBook Pro",
+      "price": 1200,
+      "category": "tech",
+      "image": "https://example.com/macbook-pro.png",
+      "description": "The MacBook Pro features a powerful processor and a vibrant Retina display, making it perfect for professionals and creatives alike."
+    },
+    {
+      "id": 21,
+      "name": "iPhone 13",
+      "price": 999,
+      "category": "tech",
+      "image": "https://example.com/iphone-13.png",
+      "description": "Apple's latest smartphone with advanced camera systems and A15 Bionic chip."
+    },
+    {
+      "id": 22,
+      "name": "Samsung Galaxy S21",
+      "price": 800,
+      "category": "tech",
+      "image": "https://example.com/samsung-galaxy-s21.png",
+      "description": "High-end smartphone from Samsung with powerful performance and professional-grade cameras."
+    },
+    {
+      "id": 23,
+      "name": "Google Pixel 6",
+      "price": 600,
+      "category": "tech",
+      "image": "https://example.com/google-pixel-6.png",
+      "description": "Google's flagship smartphone boasting a Tensor chip and excellent photo capabilities."
+    },
+    {
+      "id": 24,
+      "name": "Dell XPS 13",
+      "price": 1100,
+      "category": "tech",
+      "image": "https://example.com/dell-xps-13.png",
+      "description": "A high-performance laptop with a stunning 4K display and a compact design."
+    },
+    {
+      "id": 25,
+      "name": "Apple Watch Series 7",
+      "price": 399,
+      "category": "tech",
+      "image": "https://example.com/apple-watch-series-7.png",
+      "description": "The latest iteration of Apple's smartwatch with new health and fitness features."
+    },
+    {
+      "id": 26,
+      "name": "Bose Headphones 700",
+      "price": 379,
+      "category": "tech",
+      "image": "https://example.com/bose-headphones-700.png",
+      "description": "Top-of-the-line noise-cancelling headphones from Bose, offering unparalleled sound quality."
+    },
+    {
+      "id": 27,
+      "name": "Sony PlayStation 5",
+      "price": 499,
+      "category": "tech",
+      "image": "https://example.com/sony-playstation-5.png",
+      "description": "The latest gaming console from Sony, providing next-gen graphics and speed."
+    },
+    {
+      "id": 28,
+      "name": "Nvidia RTX 3080",
+      "price": 699,
+      "category": "tech",
+      "image": "https://example.com/nvidia-rtx-3080.png",
+      "description": "A powerful graphics card that delivers stunning visuals and high performance for gamers and creators."
+    },
+    {
+      "id": 29,
+      "name": "Amazon Echo Dot",
+      "price": 49,
+      "category": "tech",
+      "image": "https://example.com/amazon-echo-dot.png",
+      "description": "A smart speaker with Alexa that fits perfectly into small spaces."
+    },
+    {
+      "id": 30,
+      "name": "Nike Air Max",
+      "price": 90,
+      "category": "sneakers",
+      "image": "https://example.com/nike-air-max.png",
+      "description": "Nike Air Max sneakers offer ultimate comfort and style, with air cushioning that provides excellent support for everyday wear."
+    },
+    {
+      "id": 31,
+      "name": "Adidas Ultraboost",
+      "price": 180,
+      "category": "sneakers",
+      "image": "https://example.com/adidas-ultraboost.png",
+      "description": "High-performance sneakers that provide comfort and energy return in every step."
+    },
+    {
+      "id": 32,
+      "name": "Puma Deviate Nitro",
+      "price": 160,
+      "category": "sneakers",
+      "image": "https://example.com/puma-deviate-nitro.png",
+      "description": "A running shoe that offers superior cushioning and propulsion, perfect for high-speed runs."
+    },
+    {
+      "id": 33,
+      "name": "New Balance 990v5",
+      "price": 175,
+      "category": "sneakers",
+      "image": "https://example.com/new-balance-990v5.png",
+      "description": "A classic running shoe that combines comfort and stability, ideal for everyday wear."
+    },
+    {
+      "id": 34,
+      "name": "Converse Chuck Taylor All Star",
+      "price": 55,
+      "category": "sneakers",
+      "image": "https://example.com/converse-chuck-taylor.png",
+      "description": "Iconic high-top sneakers known for their timeless style and versatility."
+    },
+    {
+      "id": 35,
+      "name": "Vans Old Skool",
+      "price": 60,
+      "category": "sneakers",
+      "image": "https://example.com/vans-old-skool.png",
+      "description": "Classic skate shoes that have become a staple in fashion and everyday wear."
+    },
+    {
+      "id": 36,
+      "name": "Brooks Ghost 13",
+      "price": 130,
+      "category": "sneakers",
+      "image": "https://example.com/brooks-ghost-13.png",
+      "description": "A reliable running shoe that offers soft cushioning and smooth transitions."
+    },
+    {
+      "id": 37,
+      "name": "Hoka One One Bondi 7",
+      "price": 150,
+      "category": "sneakers",
+      "image": "https://example.com/hoka-one-one-bondi-7.png",
+      "description": "Well-cushioned running shoes that provide maximum comfort over long distances."
+    },
+    {
+      "id": 38,
+      "name": "Under Armour HOVR Phantom 2",
+      "price": 140,
+      "category": "sneakers",
+      "image": "https://example.com/under-armour-hovr-phantom-2.png",
+      "description": "Sporty sneakers with 'zero gravity feel' to maintain energy return that helps eliminate impact."
+    },
+    {
+      "id": 39,
+      "name": "Reebok Nano X1",
+      "price": 130,
+      "category": "sneakers",
+      "image": "https://example.com/reebok-nano-x1.png",
+      "description": "A versatile training shoe that excels in a variety of athletic activities."
+    },
+    {
+      "id": 40,
+      "name": "Samsonite Luggage",
+      "price": 230,
+      "category": "travel",
+      "image": "https://example.com/samsonite-luggage.png",
+      "description": "Samsonite Luggage sets the standard for travel with its durable material and spacious design, ensuring a smooth travel experience."
+    },
+    {
+      "id": 41,
+      "name": "American Tourister",
+      "price": 200,
+      "category": "travel",
+      "image": "https://example.com/american-tourister.png",
+      "description": "Affordable and durable luggage known for its lightweight design and practical features."
+    },
+    {
+      "id": 42,
+      "name": "Travelpro Maxlite 5",
+      "price": 150,
+      "category": "travel",
+      "image": "https://example.com/travelpro-maxlite-5.png",
+      "description": "Lightweight and expandable, this luggage is perfect for both short trips and extended travel."
+    },
+    {
+      "id": 43,
+      "name": "Tumi Alpha 3",
+      "price": 500,
+      "category": "travel",
+      "image": "https://example.com/tumi-alpha-3.png",
+      "description": "Premium luggage that combines durability, superior design, and high functionality."
+    },
+    {
+      "id": 44,
+      "name": "Osprey Farpoint 40",
+      "price": 160,
+      "category": "travel",
+      "image": "https://example.com/osprey-farpoint-40.png",
+      "description": "A travel backpack that is perfect for weekend getaways and adventurous trips."
+    },
+    {
+      "id": 45,
+      "name": "Eagle Creek Gear Warrior",
+      "price": 220,
+      "category": "travel",
+      "image": "https://example.com/eagle-creek-gear-warrior.png",
+      "description": "A rugged bag with versatile features, designed for tough travel conditions."
+    },
+    {
+      "id": 46,
+      "name": "Briggs & Riley Baseline",
+      "price": 600,
+      "category": "travel",
+      "image": "https://example.com/briggs-riley-baseline.png",
+      "description": "High-end luggage with a lifetime warranty, known for its resilience and classic style."
+    },
+    {
+      "id": 47,
+      "name": "Patagonia Black Hole Duffel",
+      "price": 130,
+      "category": "travel",
+      "image": "https://example.com/patagonia-black-hole-duffel.png",
+      "description": "A durable duffel bag that's ideal for gear-heavy trips and rugged adventures."
+    },
+    {
+      "id": 48,
+      "name": "Herschel Supply Co. Novel Duffel",
+      "price": 85,
+      "category": "travel",
+      "image": "https://example.com/herschel-supply-co-novel-duffel.png",
+      "description": "A stylish duffel with ample space for all your travel essentials."
+    },
+    {
+      "id": 49,
+      "name": "Away The Bigger Carry-On",
+      "price": 245,
+      "category": "travel",
+      "image": "https://example.com/away-the-bigger-carry-on.png",
+      "description": "A thoughtfully designed carry-on that fits in most overhead bins, ideal for frequent travelers."
+    },
+    {
+      "id": 50,
+      "name": "Gucci Tote Bag",
+      "price": 890,
+      "category": "hand-bag",
+      "image": "https://example.com/gucci-tote-bag.png",
+      "description": "The Gucci Tote Bag combines luxury and functionality, crafted from premium materials with a sophisticated design."
+    },
+    {
+      "id": 51,
+      "name": "Louis Vuitton Neverfull",
+      "price": 1400,
+      "category": "hand-bag",
+      "image": "https://example.com/louis-vuitton-neverfull.png",
+      "description": "Iconic tote bag that blends classic style with practicality."
+    },
+    {
+      "id": 52,
+      "name": "Chanel Classic Flap",
+      "price": 5500,
+      "category": "hand-bag",
+      "image": "https://example.com/chanel-classic-flap.png",
+      "description": "A timeless luxury bag known for its quilted leather and elegant chain strap."
+    },
+    {
+      "id": 53,
+      "name": "Hermès Birkin",
+      "price": 12000,
+      "category": "hand-bag",
+      "image": "https://example.com/hermes-birkin.png",
+      "description": "One of the most coveted handbags in the world, offering unmatched craftsmanship and exclusivity."
+    },
+    {
+      "id": 54,
+      "name": "Prada Nylon Tote",
+      "price": 990,
+      "category": "hand-bag",
+      "image": "https://example.com/prada-nylon-tote.png",
+      "description": "A stylish and durable tote, perfect for everyday use."
+    },
+    {
+      "id": 55,
+      "name": "YSL Loulou",
+      "price": 2100,
+      "category": "hand-bag",
+      "image": "https://example.com/ysl-loulou.png",
+      "description": "A chic shoulder bag with a quilted texture and the signature YSL logo."
+    },
+    {
+      "id": 56,
+      "name": "Celine Mini Luggage",
+      "price": 3100,
+      "category": "hand-bag",
+      "image": "https://example.com/celine-mini-luggage.png",
+      "description": "A fashionable tote bag with a distinctive structured shape."
+    },
+    {
+      "id": 57,
+      "name": "Coach Tabby",
+      "price": 395,
+      "category": "hand-bag",
+      "image": "https://example.com/coach-tabby.png",
+      "description": "A modern take on an archival 1970s Coach design, this compact bag is crafted in a mix of leather and suede."
+    },
+    {
+      "id": 58,
+      "name": "Kate Spade New York All Day Large Tote",
+      "price": 298,
+      "category": "hand-bag",
+      "image": "https://example.com/kate-spade-new-york-all-day-large-tote.png",
+      "description": "A versatile and spacious tote that's perfect for carrying all your essentials."
+    },
+    {
+      "id": 59,
+      "name": "Michael Kors Jet Set",
+      "price": 298,
+      "category": "hand-bag",
+      "image": "https://example.com/michael-kors-jet-set.png",
+      "description": "A sleek, streamlined design that's perfect for the sophisticated urbanite on the go."
     }
   ]
 }
