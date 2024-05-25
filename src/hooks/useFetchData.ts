@@ -7,6 +7,7 @@ export const useFetchData = (getDataFn) => {
 
   useEffect(() => {
     setIsLoading(true);
+    setError(false);
     try {
       getDataFn().then((res) => {
         setData(res);
@@ -17,5 +18,6 @@ export const useFetchData = (getDataFn) => {
       setIsLoading(false);
     }
   }, []);
+
   return { data, isLoading, error };
 };

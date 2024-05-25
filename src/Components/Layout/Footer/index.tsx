@@ -1,7 +1,7 @@
 // import { Icon } from '@iconify/react';
 export function Footer() {
   return (
-    <footer className="absolute -bottom-28 w-full flex justify-between bg-gray-500 p-14 text-white">
+    <footer className="absolute -bottom-36 w-full flex justify-between bg-gray-500 p-14 text-white">
       <ul className=" flex gap-5 ">
         <li className="flex items-center justify-center gap-2">
           {/* <Icon icon="iconamoon:gift-light" className="text-red-500" /> */}

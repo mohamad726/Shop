@@ -3,7 +3,7 @@ import { Footer, Header } from "../Components/Layout";
 
 function Layout() {
   return (
-    <div className="relative h-screen">
+    <div className="relative min-h-screen">
       <Header />
       <Outlet />
       <Footer />
