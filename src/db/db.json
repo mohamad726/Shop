@@ -1,4 +1,20 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "email": "hamed@gmail.com",
+      "userName": "hamed",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "mohammad@gmail.com",
+      "userName": "mohammad",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
   "categories": [
     {
       "id": 1,
