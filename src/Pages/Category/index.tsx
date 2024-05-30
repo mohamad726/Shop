@@ -6,7 +6,14 @@ import { getData } from "../../services/getData";
 function Category() {
   const { category } = useParams();
   const { data, isLoading, error } = useFetchData(() => getData(category));
-  return <CategoriesTemplate data={data} isLoading={isLoading} error={error} />;
+  return (
+    <CategoriesTemplate
+      category={category}
+      data={data}
+      isLoading={isLoading}
+      error={error}
+    />
+  );
 }
 
 export default Category;

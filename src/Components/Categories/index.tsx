@@ -3,7 +3,7 @@ import { useFetchData } from "../../hooks/useFetchData";
 import { getCategoriesData } from "../../services/getData";
 
 const Category = () => {
-  const { data, isLoading, error } = useFetchData(() => getCategoriesData(""));
+  const { data, isLoading, error } = useFetchData(getCategoriesData);
   return (
     <section className="p-8">
       {isLoading && <p>Loading ...</p>}

@@ -5,8 +5,11 @@ const Hero = () => {
   return (
     <section className="relative">
       <img className="w-full" src="/landing.webp" alt="Shop" />
-      <div className="w-1/3 absolute top-40 left-28 flex flex-col gap-10">
-        <h1 className="text-green-800 text-5xl leading-[1.1] font-bold">
+      <div
+        className="lg:w-1/3 w-2/3 absolute top-28 left-28
+gap-10 flex flex-col"
+      >
+        <h1 className="text-green-800 text-[4vw] leading-[1.1] font-bold">
           Shopping And Department Store.
         </h1>
         <p className="text-gray-600 text-2xl font-medium">
