@@ -4,9 +4,48 @@ import {
   CART_PAGE_ROUTE,
   HOME_PAGE_ROUTE,
   LOGIN_PAGE_ROUTE,
-} from "../../../Const/routes";
+} from "../../../constant/routes";
+import { useUserContext } from "../../../context/authContext";
+import { Menu, MenuItem, Typography } from "@mui/material";
+import { useState } from "react";
+import { removeFromLocalStorage } from "../../../lib/helper";
+import { AuthReducerAction } from "../../../types/enums";
 
-export function Header() {
+type HeaderProps = {
+  isLogin: boolean;
+};
+
+export function Header({ isLogin }: HeaderProps) {
+  const { state, dispatch } = useUserContext();
+
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleLogout = () => {
+    removeFromLocalStorage("role");
+    removeFromLocalStorage("userName");
+    removeFromLocalStorage("token");
+
+    dispatch({
+      type: AuthReducerAction.LOGOUT,
+      payload: {
+        isLogin: false,
+        userName: "",
+        role: "",
+      },
+    });
+
+    handleClose();
+  };
+
   return (
     <header className="flex justify-between gap-20 px-10 py-5 items-center">
       <Link to={HOME_PAGE_ROUTE}>
@@ -25,7 +64,13 @@ export function Header() {
       </div>
       <ul className="flex gap-8">
         <li className="cursor-pointer">
-          <Link to={LOGIN_PAGE_ROUTE}>Login</Link>
+          {isLogin ? (
+            <Typography id="user-text" onClick={handleClick}>
+              Hi, {state.userName}
+            </Typography>
+          ) : (
+            <Link to={LOGIN_PAGE_ROUTE}>Login</Link>
+          )}
         </li>
         <li className="cursor-pointer">
           <NavLink
@@ -48,6 +93,21 @@ export function Header() {
           </NavLink>
         </li>
       </ul>
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          "aria-labelledby": "user-text",
+        }}
+      >
+        <MenuItem onClick={handleClose}>Profile</MenuItem>
+        {state.role === "admin" ? (
+          <MenuItem onClick={handleClose}>Dashboard</MenuItem>
+        ) : null}
+        <MenuItem onClick={handleLogout}>Logout</MenuItem>
+      </Menu>
     </header>
   );
 }

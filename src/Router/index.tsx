@@ -1,17 +1,17 @@
-import { createBrowserRouter } from 'react-router-dom';
-import Home from '../Pages/Home';
-import Cart from '../Pages/Cart';
-import Layout from '../Layout';
-import Category from '../Pages/Category';
-import Product from '../Pages/Product';
-import Login from '../Pages/Login';
-import AboutUs from '../Pages/About-us';
+import { createBrowserRouter } from "react-router-dom";
+import Home from "../Pages/Home";
+import Cart from "../Pages/Cart";
+import Layout from "../Layout";
+import Category from "../Pages/Category";
+import Product from "../Pages/Product";
+import Login from "../Pages/Login";
+import AboutUs from "../Pages/About-us";
 import {
   ABOUT_US_PAGE_ROUTE,
   CART_PAGE_ROUTE,
   HOME_PAGE_ROUTE,
   LOGIN_PAGE_ROUTE,
-} from '../Const/routes';
+} from "../constant/routes";
 
 export const router = createBrowserRouter([
   {
@@ -32,11 +32,11 @@ export const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: ':category',
+        path: ":category",
         element: <Category />,
       },
       {
-        path: ':category/:product',
+        path: ":category/:product",
         element: <Product />,
       },
     ],
