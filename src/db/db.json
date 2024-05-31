@@ -2,15 +2,22 @@
   "users": [
     {
       "id": 1,
+      "email": "ashkan@gmail.com",
+      "userName": "Ashkan",
+      "password": "1234",
+      "role": "moderator"
+    },
+    {
+      "id": 2,
       "email": "hamed@gmail.com",
-      "userName": "hamed",
+      "userName": "Hamed",
       "password": "1234",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": 3,
       "email": "mohammad@gmail.com",
-      "userName": "mohammad",
+      "userName": "Mohammad",
       "password": "1234",
       "role": "user"
     }

@@ -1,4 +1,4 @@
-import { BASE_URL } from "../Const/url";
+import { BASE_URL } from "../constant/url";
 
 export const getData = async (category: string) => {
   const data = await fetch(`${BASE_URL}/products?category=${category}`);
@@ -12,5 +12,12 @@ export const getSingleData = async (id: string) => {
 
 export const getCategoriesData = async () => {
   const data = await fetch(`${BASE_URL}/categories`);
+  return data.json();
+};
+
+export const getUserData = async (email: string, password: string) => {
+  const data = await fetch(
+    `${BASE_URL}/users?email=${email}&password=${password}`
+  );
   return data.json();
 };

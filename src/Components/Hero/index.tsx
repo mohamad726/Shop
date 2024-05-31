@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ABOUT_US_PAGE_ROUTE } from "../../Const/routes";
+import { ABOUT_US_PAGE_ROUTE } from "../../constant/routes";
 
 const Hero = () => {
   return (
