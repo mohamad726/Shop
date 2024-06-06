@@ -20,7 +20,7 @@ const authInit = {
 
 function authReducer(
   state: AuthState,
-  action: { type: string; payload: any }
+  action: { type: string; payload: AuthState }
 ): AuthState {
   switch (action.type) {
     case AuthReducerAction.SET_USER:
@@ -42,7 +42,7 @@ function authReducer(
 
 export const AuthContext = createContext<{
   state: AuthState;
-  dispatch: React.Dispatch<{ type: string; payload: any }>;
+  dispatch: React.Dispatch<{ type: string; payload: AuthState }>;
 }>({
   state: authInit,
   dispatch: () => {},
