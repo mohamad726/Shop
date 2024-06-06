@@ -1,7 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import {
   ABOUT_US_PAGE_ROUTE,
   CART_PAGE_ROUTE,
+  DASHBOARD_PAGE_ROUTE,
   HOME_PAGE_ROUTE,
   LOGIN_PAGE_ROUTE,
 } from "../../../constant/routes";
@@ -17,12 +18,16 @@ type HeaderProps = {
 
 export function Header({ isLogin }: HeaderProps) {
   const { state, dispatch } = useUserContext();
-
+  const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
+  };
+
+  const handleDashboard = () => {
+    navigate(DASHBOARD_PAGE_ROUTE, { replace: true });
   };
 
   const handleClose = () => {
@@ -104,7 +109,7 @@ export function Header({ isLogin }: HeaderProps) {
       >
         <MenuItem onClick={handleClose}>Profile</MenuItem>
         {state.role === "admin" ? (
-          <MenuItem onClick={handleClose}>Dashboard</MenuItem>
+          <MenuItem onClick={handleDashboard}>Dashboard</MenuItem>
         ) : null}
         <MenuItem onClick={handleLogout}>Logout</MenuItem>
       </Menu>

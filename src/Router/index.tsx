@@ -9,9 +9,12 @@ import AboutUs from "../Pages/About-us";
 import {
   ABOUT_US_PAGE_ROUTE,
   CART_PAGE_ROUTE,
+  DASHBOARD_PAGE_ROUTE,
   HOME_PAGE_ROUTE,
   LOGIN_PAGE_ROUTE,
 } from "../constant/routes";
+import Dashboard from "../Pages/Dashboard";
+import { ProtectedRoute } from "../Components/ProtectedRoute";
 
 export const router = createBrowserRouter([
   {
@@ -44,5 +47,13 @@ export const router = createBrowserRouter([
   {
     path: LOGIN_PAGE_ROUTE,
     element: <Login />,
+  },
+  {
+    path: DASHBOARD_PAGE_ROUTE,
+    element: (
+      <ProtectedRoute>
+        <Dashboard />
+      </ProtectedRoute>
+    ),
   },
 ]);
